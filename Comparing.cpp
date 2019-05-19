@@ -139,8 +139,7 @@ int main() {
 	CornerDetector("orb", gray, img_orb, kpts_orb, desc_orb);
 	CornerDetector("orb", gray2, img_orb2, kpts_orb2, desc_orb2);
 
-	DrawPoints(img_orb, kpts_orb, cv::Scalar(0, 0, 255));//source1
-	DrawPoints(img_orb2, kpts_orb2, cv::Scalar(0, 0, 255));//source2
+	
 	cv::imshow("ORB_1", img_orb);
 	cv::imshow("ORB_2", img_orb2);
 	kpts_orb_transform = CoordTransform(kpts_orb, M);
